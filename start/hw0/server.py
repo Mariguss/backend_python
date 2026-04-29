@@ -8,6 +8,7 @@ def handle_client(client_socket):
     try: 
         # Устанавливаем небольшой таймаут, чтобы сервер не висел вечно
         # client_socket.settimeout(2)
+        
         # отправляем сообщение клиенту
         data = "OK\n".encode('utf-8')
         client_socket.sendall(data)
